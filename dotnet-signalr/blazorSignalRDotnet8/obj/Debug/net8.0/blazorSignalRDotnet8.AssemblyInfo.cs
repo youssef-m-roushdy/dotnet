@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("blazorSignalRDotnet8")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+253a54035854933f43e06eaf5f315031b7acdd3e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f3d2da8fbfa0ec0b2bb219922701d62e757ccce")]
 [assembly: System.Reflection.AssemblyProductAttribute("blazorSignalRDotnet8")]
 [assembly: System.Reflection.AssemblyTitleAttribute("blazorSignalRDotnet8")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
