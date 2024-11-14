@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "JTFWMJopn0WsfcTioCs+ycdr8TvcpDiWHej/29JfsEw=",
+  "Source": "mongoIdentity",
+  "BasePath": "_content/mongoIdentity",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

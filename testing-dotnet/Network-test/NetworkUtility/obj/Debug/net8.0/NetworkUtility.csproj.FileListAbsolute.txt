@@ -1,0 +1,14 @@
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\bin\Debug\net8.0\NetworkUtility.exe
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\bin\Debug\net8.0\NetworkUtility.deps.json
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\bin\Debug\net8.0\NetworkUtility.runtimeconfig.json
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\bin\Debug\net8.0\NetworkUtility.dll
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\bin\Debug\net8.0\NetworkUtility.pdb
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\obj\Debug\net8.0\NetworkUtility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\obj\Debug\net8.0\NetworkUtility.AssemblyInfoInputs.cache
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\obj\Debug\net8.0\NetworkUtility.AssemblyInfo.cs
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\obj\Debug\net8.0\NetworkUtility.csproj.CoreCompileInputs.cache
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\obj\Debug\net8.0\NetworkUtility.dll
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\obj\Debug\net8.0\refint\NetworkUtility.dll
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\obj\Debug\net8.0\NetworkUtility.pdb
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\obj\Debug\net8.0\NetworkUtility.genruntimeconfig.cache
+C:\Users\yosse\OneDrive\Desktop\testing-dotnet\Network-test\NetworkUtility\obj\Debug\net8.0\ref\NetworkUtility.dll
