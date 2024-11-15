@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eJv5hmEYyNvt0cL7LpKn8FwR4NRLf9tzSG2CVtRxkgI=",
+  "Source": "dotnetChatAppServer",
+  "BasePath": "_content/dotnetChatAppServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
