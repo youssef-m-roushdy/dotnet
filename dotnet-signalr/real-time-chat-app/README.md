@@ -12,7 +12,14 @@ Definition: is a central component that enables clients (like browsers or other 
 
 ## Packages
 
+### NuGet
+
 * Microsoft.AspNet.SignalR
+
+### NPM
+
+* @microsoft/signalr
+* react-bootstrap
 
 ## ChatHub Class
 
