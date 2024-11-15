@@ -1,0 +1,6 @@
+@dotnetChatAppServer_HostAddress = http://localhost:5148
+
+GET {{dotnetChatAppServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

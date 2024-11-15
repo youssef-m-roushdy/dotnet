@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/youssef/Desktop/dotnet/dotnet-signalr/notification/notificationSystem/notificationSystem.csproj": {}
+    "/home/youssef/Desktop/dotnet/dotnet-signalr/real-time-chat-app/dotnetChatAppServer/dotnetChatAppServer.csproj": {}
   },
   "projects": {
-    "/home/youssef/Desktop/dotnet/dotnet-signalr/notification/notificationSystem/notificationSystem.csproj": {
+    "/home/youssef/Desktop/dotnet/dotnet-signalr/real-time-chat-app/dotnetChatAppServer/dotnetChatAppServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/youssef/Desktop/dotnet/dotnet-signalr/notification/notificationSystem/notificationSystem.csproj",
-        "projectName": "notificationSystem",
-        "projectPath": "/home/youssef/Desktop/dotnet/dotnet-signalr/notification/notificationSystem/notificationSystem.csproj",
+        "projectUniqueName": "/home/youssef/Desktop/dotnet/dotnet-signalr/real-time-chat-app/dotnetChatAppServer/dotnetChatAppServer.csproj",
+        "projectName": "dotnetChatAppServer",
+        "projectPath": "/home/youssef/Desktop/dotnet/dotnet-signalr/real-time-chat-app/dotnetChatAppServer/dotnetChatAppServer.csproj",
         "packagesPath": "/home/youssef/.nuget/packages/",
-        "outputPath": "/home/youssef/Desktop/dotnet/dotnet-signalr/notification/notificationSystem/obj/",
+        "outputPath": "/home/youssef/Desktop/dotnet/dotnet-signalr/real-time-chat-app/dotnetChatAppServer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/youssef/.nuget/NuGet/NuGet.Config"
@@ -38,21 +38,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[8.0.4, )"
-            },
             "Microsoft.AspNetCore.SignalR": {
               "target": "Package",
               "version": "[1.1.0, )"
             },
-            "Microsoft.AspNetCore.SignalR.Client": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.6.2, )"
             }
           },
           "imports": [
