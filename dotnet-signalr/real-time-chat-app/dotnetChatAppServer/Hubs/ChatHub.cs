@@ -26,19 +26,28 @@ namespace dotnetChatAppServer.Hubs
 
         public async Task JoinSpecificChatRoom(UserConnction conn)
         {
-            //Groups: Like creating a section inside our conections or organizing into different areas
             //When establishing connection between user and server a new connection id is being created
+            //Store user connection in dict with connection Id is the key
             _shared.connections[Context.ConnectionId] = conn;
+            //Groups: Like creating a section inside our conections or organizing into different areas
             await Groups.AddToGroupAsync(Context.ConnectionId, conn.ChatRoom);
             await Clients.Group(conn.ChatRoom).SendAsync("JoinSpecificChatRoom", "admin", $"{conn.UserName} has joined {conn.ChatRoom}");
         }
 
         public async Task SendMessage(string msg)
         {
-            if(_shared.connections.TryGetValue(Context.ConnectionId, out UserConnction conn))
+            // Check if the current connection (identified by Context.ConnectionId) exists in the shared connections dictionary
+            // If it does, retrieve the corresponding UserConnction object (conn)
+            if (_shared.connections.TryGetValue(Context.ConnectionId, out UserConnction conn))
             {
+                // Send the message to all clients in the chat room specified in conn.ChatRoom
+                // Clients.Group targets only the users connected to this specific group (chat room)
                 await Clients.Group(conn.ChatRoom)
-                .SendAsync("ReceiveSpecificMessage", conn.UserName, msg);
+                .SendAsync(
+                    "ReceiveSpecificMessage", // Name of the client-side method to be called
+                    conn.UserName,            // The username of the sender, retrieved from the conn object
+                    msg                       // The message content sent by the user
+                );
             }
         }
     }

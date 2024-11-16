@@ -20,6 +20,7 @@ Definition: is a central component that enables clients (like browsers or other 
 
 * @microsoft/signalr
 * react-bootstrap
+* bootstrap
 
 ## ChatHub Class
 
@@ -71,6 +72,7 @@ public async Task JoinChat(UserConnction conn)
 ```
 public async Task JoinSpecificChatRoom(UserConnction conn)
 {
+    _shared.connections[Context.ConnectionId] = conn;
     await Groups.AddToGroupAsync(Context.ConnectionId, conn.ChatRoom);
     await Clients.Group(conn.ChatRoom).SendAsync("ReceiveMessage", "admin", $"{conn.UserName} has joined {conn.ChatRoom}");
 }
@@ -82,6 +84,7 @@ public async Task JoinSpecificChatRoom(UserConnction conn)
 
 2. <b>Functionality</b>:
 
+    * Stores user connection in a dictionary with connectionId is a key
     * Adds a client connection to a specific SignalR group (chat room).
     * Notifies all users in that chat room about the new user.
 
@@ -98,6 +101,48 @@ public async Task JoinSpecificChatRoom(UserConnction conn)
             * `"admin"`: The sender of the message.
             * `$"{conn.UserName} has joined {conn.ChatRoom}"`: A dynamic message indicating which user has joined the chat room.
 
+## SendMessage
+
+<p>The method name suggests that it handles sending messages from one user to others in the same chat room.</p>
+
+```
+public async Task SendMessage(string msg)
+{
+    if (_shared.connections.TryGetValue(Context.ConnectionId, out UserConnction conn))
+    {
+        await Clients.Group(conn.ChatRoom)
+            .SendAsync("ReceiveSpecificMessage", conn.UserName, msg);
+    }
+}
+```
+
+<b>Parameters:</b>
+
+* string msg: The content of the message being sent by the user.
+
+<b>Retrieve Connection Details:</b>
+
+* `_shared.connections`:
+    * Likely a shared dictionary (or similar collection) that maps connection IDs (`Context.ConnectionId`) to `UserConnction` objects.
+    * This collection stores information about all connected users, such as their username and chat room.
+* `Context.ConnectionId`:
+    * The unique identifier for the current client connection.
+* `TryGetValue`:
+    * Checks if the dictionary contains the current ConnectionId.
+    * If found, assigns the corresponding UserConnction to conn.
+
+<b>Send Message to the Group</b>
+
+* `Clients.Group(conn.ChatRoom)`:
+    * Targets all clients in the specific chat room identified by `conn.ChatRoom`.
+* SendAsync:
+    * Sends a message asynchronously to the targeted group.
+* Parameters for `SendAsync`:
+    * `"ReceiveSpecificMessage"`: The name of the client-side method that will handle the message.
+* `conn.UserName`: The name of the user sending the message.
+* `msg`: The content of the message.
+
+
 ## Key Concepts
 
 1. <b>SignalR Hub</b>:
@@ -111,3 +156,6 @@ public async Task JoinSpecificChatRoom(UserConnction conn)
 4. <b>Client-Server Communication</b>:
     * The server invokes client-side methods (e.g., `ReceiveMessage`) using the `SendAsync` method.
     * Clients must implement these methods to handle incoming messages.
+
+
+    
