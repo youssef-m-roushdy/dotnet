@@ -76,3 +76,22 @@ or dll(libraries that can be reused across the different platforms) witch is exe
   * Refrence DataTypes
     * Predefined DataTypes(objects, strings)
     * User defined DataType(classes interfaces)
+
+# Operators
+
+  * Operators: is the symbol use to perform the operation
+  * Operands: Variable or Constant 
+
+<b>Types Of Operations</b>
+
+  * Unary Operator ++, --
+  * Bianry
+    * Arithmetic Operator +, -, *, /, %
+    * Relational Operator <, <=,>, >=, ==, !=
+    * Logical Operator &&, ||, !
+    * Bitwise Operator &, |, <<, >>, -, ^
+    * Assignment Operator =, +=, -=, *=, %=
+  * Teranry Operator
+    * ?:
+
+
