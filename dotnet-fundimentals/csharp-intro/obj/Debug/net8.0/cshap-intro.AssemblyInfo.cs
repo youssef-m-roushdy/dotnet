@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cshap-intro")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e8f6d3ac7dfaa54729f88cd2a29b236155ab972")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f816b1118a86727b6a4ae8deb35866f0075bc7a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("cshap-intro")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cshap-intro")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -94,4 +94,9 @@ or dll(libraries that can be reused across the different platforms) witch is exe
   * Teranry Operator
     * ?:
 
+# Conditional Statement
 
+  * If statement
+  * If-Else Statement
+  * If-Else-If or Lader Statement
+  * Switch
