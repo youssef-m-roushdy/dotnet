@@ -1,0 +1,14 @@
+/home/youssef/Desktop/C Sharp/arrar-cSharp/bin/Debug/net8.0/arrar-cSharp
+/home/youssef/Desktop/C Sharp/arrar-cSharp/bin/Debug/net8.0/arrar-cSharp.deps.json
+/home/youssef/Desktop/C Sharp/arrar-cSharp/bin/Debug/net8.0/arrar-cSharp.runtimeconfig.json
+/home/youssef/Desktop/C Sharp/arrar-cSharp/bin/Debug/net8.0/arrar-cSharp.dll
+/home/youssef/Desktop/C Sharp/arrar-cSharp/bin/Debug/net8.0/arrar-cSharp.pdb
+/home/youssef/Desktop/C Sharp/arrar-cSharp/obj/Debug/net8.0/arrar-cSharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/youssef/Desktop/C Sharp/arrar-cSharp/obj/Debug/net8.0/arrar-cSharp.AssemblyInfoInputs.cache
+/home/youssef/Desktop/C Sharp/arrar-cSharp/obj/Debug/net8.0/arrar-cSharp.AssemblyInfo.cs
+/home/youssef/Desktop/C Sharp/arrar-cSharp/obj/Debug/net8.0/arrar-cSharp.csproj.CoreCompileInputs.cache
+/home/youssef/Desktop/C Sharp/arrar-cSharp/obj/Debug/net8.0/arrar-cSharp.dll
+/home/youssef/Desktop/C Sharp/arrar-cSharp/obj/Debug/net8.0/refint/arrar-cSharp.dll
+/home/youssef/Desktop/C Sharp/arrar-cSharp/obj/Debug/net8.0/arrar-cSharp.pdb
+/home/youssef/Desktop/C Sharp/arrar-cSharp/obj/Debug/net8.0/arrar-cSharp.genruntimeconfig.cache
+/home/youssef/Desktop/C Sharp/arrar-cSharp/obj/Debug/net8.0/ref/arrar-cSharp.dll
