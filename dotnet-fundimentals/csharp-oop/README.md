@@ -98,3 +98,21 @@
     - It allows you to define multiple constructors for a class each with a different set of parameters
     - This allows you to create objects of the class with different initial states depending on the arguments passed to the constructor
     - It allows you to make your code more flexible and reusable
+
+### Inheritance
+
+  * Inherit fields and methods from one class to another
+  * It allows to define new class based on an existing class
+  * The new class inherits the properties and methods of the existig class and can also add new properties and methods of its own
+  * It promotes code reuse simplifies code maintenance and improves code organization
+  * Inheritance Type:
+    - Hierarchical Inheritance
+      * `Class B` inherits `Class A` and `Class C` inherits `Class A`
+    - Single Inheritance
+      * `Class B` inherits `Class A` 
+    - Multilevel Inheritance
+      * `Class B` inherits `Class A` and `Class C` inherits `Class B`
+    - Multiple Inheritance
+      * One Derived Class will have multiple parents that can not be achieved in C# at all it can be achieved with help of interfaces that is the add-on functionality to the object-oriented programming but it is not possible with help of classes
+    - Hybrid Inheritance
+      * Have any kind of pattern like: `Single, Hierarchical`

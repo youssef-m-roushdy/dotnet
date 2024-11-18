@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace csharp_oop
 {
-    public class program
+    public class Program
     {
         public static void Main()
         {
@@ -14,10 +14,14 @@ namespace csharp_oop
             //std1.acceptDetails();
             std1.displayDetails();
             std2.displayDetails();
+
+            Marks mark = new Marks();
+            mark.acceptDetails();
+            mark.displayDetails();
         }
     }
 
-    class Student
+    public class Student
     {
         // By default all members of the class is encasulated you can access
         // them by give the the public access modifier
@@ -40,13 +44,13 @@ namespace csharp_oop
             studentName = student_name;
         }
         //Member functions
-        // public void acceptDetails()
-        // {
-        //     Console.Write("Enter Student ID: ");
-        //     studentID = int.Parse(Console.ReadLine());
-        //     Console.Write("Enter Student Name: ");
-        //     studentName = Console.ReadLine();
-        // }
+        public void acceptDetails()
+        {
+            Console.Write("Enter Student ID: ");
+            studentID = int.Parse(Console.ReadLine());
+            Console.Write("Enter Student Name: ");
+            studentName = Console.ReadLine();
+        }
         public void displayDetails()
         {
             Console.WriteLine($"StudentId: {studentID} and his name: {studentName}");
