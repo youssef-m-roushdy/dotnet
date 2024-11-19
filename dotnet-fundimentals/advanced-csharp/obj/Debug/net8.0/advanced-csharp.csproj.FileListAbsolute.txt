@@ -1,0 +1,15 @@
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/bin/Debug/net8.0/advanced-csharp
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/bin/Debug/net8.0/advanced-csharp.deps.json
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/bin/Debug/net8.0/advanced-csharp.runtimeconfig.json
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/bin/Debug/net8.0/advanced-csharp.dll
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/bin/Debug/net8.0/advanced-csharp.pdb
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/obj/Debug/net8.0/advanced-csharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/obj/Debug/net8.0/advanced-csharp.AssemblyInfoInputs.cache
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/obj/Debug/net8.0/advanced-csharp.AssemblyInfo.cs
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/obj/Debug/net8.0/advanced-csharp.csproj.CoreCompileInputs.cache
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/obj/Debug/net8.0/advanced-csharp.sourcelink.json
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/obj/Debug/net8.0/advanced-csharp.dll
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/obj/Debug/net8.0/refint/advanced-csharp.dll
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/obj/Debug/net8.0/advanced-csharp.pdb
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/obj/Debug/net8.0/advanced-csharp.genruntimeconfig.cache
+/home/youssef/Desktop/dotnet/dotnet-fundimentals/advanced-csharp/obj/Debug/net8.0/ref/advanced-csharp.dll

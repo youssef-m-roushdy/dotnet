@@ -116,3 +116,69 @@
       * One Derived Class will have multiple parents that can not be achieved in C# at all it can be achieved with help of interfaces that is the add-on functionality to the object-oriented programming but it is not possible with help of classes
     - Hybrid Inheritance
       * Have any kind of pattern like: `Single, Hierarchical`
+
+### Polymorphism
+
+  * Is a Greek means multiple forms or shapes
+  * You can polymorphism if you want to have multiple forms of one or more methods of a class with same name
+  * In C# Polymorphism / Static Polymorphism
+    * Compile-time Polymorphism / Static Polymorphism
+    * Runtime Polymorphism / Dynamic Polymorphism
+  * When one task is performed by different ways then it called Polymorphism
+  * Compile-Time Polymorphism
+    * In this the compiler identifies which method is being called at the compile time
+    * In C# Compile-time Polymorphism can be achieved in two ways:
+      - Method Overloading
+      - Constructor Overloading
+
+### Method Overloading
+
+  * In a C# Class we can create methods with same name in a class if they have:
+    - Different number of parameters
+    - Types of parameter
+  * Method Oveloading is also known as early binding or static binding
+  * beacause which method to call is decided at compile time early than the runtime
+  * We can overload method, constructor, and indexed properties
+  * It is beacause these members have parametrs only
+  * Example:
+  ```
+  class Program
+  {
+    public void Print(string str)
+    {
+        Console.WriteLine(str);
+    }
+    public void Print(string str1, string str2)
+    {
+        Console.WriteLine($"{str1} {str2}");
+    }
+    public void Print(string str1, string str2, string str3)
+    {
+        Console.WriteLine($"{str1} {str2} {str3}");
+    }
+  }
+  ```
+
+### Method Overriding
+
+  * In Method Overriding Derived class defines same method as defined in its base class
+  * It is used to achieve runtime Polymorphism
+  * Enables you to provide implementation or method which is already providen by its base class
+  * You need to use `virtual` keyword with base class method and `override` keyword with derived class method
+  * Example:
+  ```
+  class Animal
+  {
+    public virtual void MakeSound()
+    {
+        Console.WriteLine("The animal makes a sound");
+    }
+  }
+  class Dog : Animal
+  {
+    public override void MakeSound()
+    {
+        Console.WriteLine("The dog barks");
+    }
+  }
+  ```
