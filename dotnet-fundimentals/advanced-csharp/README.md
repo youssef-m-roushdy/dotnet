@@ -156,3 +156,22 @@
   * Read-Only: get;
   * Write-Only: set;
   * Auto-Implemented: get;set;
+
+## Indexers
+
+  * An indexer allows an object to be indexed such as an array
+  * When you define indexer for a class this class behaves similar to a virtual array
+  * You can access the instance of this class using the array access operator `([])`
+  * Exmaple one-dimentional indexer:
+  ```
+  element-type this[int index] {
+    // get accessor
+    get {
+      //return the value specified by index
+    }
+
+    //set accessor
+    set {
+      //set the value specified by index
+    }
+  }

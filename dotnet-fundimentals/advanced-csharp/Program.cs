@@ -40,18 +40,30 @@ namespace advanced_csharp
             // Console.WriteLine();
 
             //Partial Class
-            var employee = new Employee();
-            employee.DisplayDetails();
+            // var employee = new Employee();
+            // employee.DisplayDetails();
+            // Console.WriteLine();
 
             //Properties CSarp
-            User user = new User();
-            user.Name = "Youssef";
-            // Exception Error
-            // user.Age = 17;
-            user.Age = 20;
-            Console.WriteLine(user.Name);
-            Console.WriteLine(user.CompanyName);
-            Console.WriteLine(user.Age);
+            // User user = new User();
+            // user.Name = "Youssef";
+            // // Exception Error
+            // // user.Age = 17;
+            // user.Age = 20;
+            // Console.WriteLine(user.Name);
+            // Console.WriteLine(user.CompanyName);
+            // Console.WriteLine(user.Age);
+            // Console.WriteLine();
+
+            //Indexer
+            StringIndexerType stringIndexerType = new StringIndexerType();
+            stringIndexerType[0] = "String One";
+            stringIndexerType[1] = "String Two";
+            stringIndexerType[2] = "String Three";
+            stringIndexerType[3] = "String Four";
+
+            for (int i = 0; i < 10; i++)
+                Console.WriteLine(stringIndexerType[i]);
         }
     }
 }
