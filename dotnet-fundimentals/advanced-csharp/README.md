@@ -101,3 +101,58 @@
   * Is a static method
   * It must have this keyword associate with class name
   * Class name should be the first parameter in the parameter list  
+
+## Partial Classes & Method
+
+  * You can split the implementation of a class a struct a method or an interface in multiple .cs file
+  * The compiler will combine all implementation from multiple .cs files when the program is compiled
+  * The `partial` Keyword is used to build a partial class
+  * Syntax:
+  ```
+  public partail ClassName
+  {
+    // Code
+  }
+  ```
+
+### Advantages of partial classes
+
+  * Multiple developers can work simultaneously in the same class in different files
+  * You can splite the UI of design code to read and understand the code
+  * The code can be added to class without having to recreate the source file like in visual studio
+  * You can also maintain your application in an efficient manner by compressing large classes into small ones
+
+## Partial Methods
+
+  * A partial class may contain a partial method
+  * One part of the class contains the signature method
+  * An optional implementation may be defined in the same part of another part
+  * If the implemetation is not supplied then method and all calls are removed at compile time
+  * Both declaration and implementation of method must have the `partial` keyword
+  * Syntax:
+  ```
+  partial void method_name()
+  {
+    // Code
+  } 
+  ```
+
+## Properties
+
+  * Property is class member that exposes the class private fields
+  * Internally C# properties are special method called accessors
+  * It has two accessors a get property accessor or a `getter` and set property or a `setter`
+  * get accessor returns a property value and set accessor assigns new value
+  * The value keyword represnts the value of a property
+
+### Usage of Properties
+
+  * C# properties can be read-only or write-only
+  * we can make fields of class private so that fields can't accessed from outside the class directly
+
+### Types of Properties
+
+  * Read-Write: get;set;
+  * Read-Only: get;
+  * Write-Only: set;
+  * Auto-Implemented: get;set;

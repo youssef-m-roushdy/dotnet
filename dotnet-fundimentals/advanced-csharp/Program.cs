@@ -35,9 +35,23 @@ namespace advanced_csharp
             // Console.WriteLine();
 
             //Extension Methods
-            int a = 5;
-            Console.WriteLine(a.IsGreaterThan(3));
+            // int a = 5;
+            // Console.WriteLine(a.IsGreaterThan(3));
+            // Console.WriteLine();
 
+            //Partial Class
+            var employee = new Employee();
+            employee.DisplayDetails();
+
+            //Properties CSarp
+            User user = new User();
+            user.Name = "Youssef";
+            // Exception Error
+            // user.Age = 17;
+            user.Age = 20;
+            Console.WriteLine(user.Name);
+            Console.WriteLine(user.CompanyName);
+            Console.WriteLine(user.Age);
         }
     }
 }
