@@ -37,3 +37,50 @@
     public abstract double GetArea();
   }
   ```
+
+## Interface
+
+  * An Interface is similar to abstract class
+  * However, unlike abstract classes all methods of an interface are fully abstract
+  * Use `interface` keyword to create an interface, Example:
+  ```
+  interface Rectangle
+  {
+    void CalculationArea();
+  }
+  ```
+  * Interfaces specify waht a class must do and not how
+  * Interfaces can't have private members
+  * Interfaces cannot contain fields becasue they represent a particular implementation of data
+  * Multiple inheritance is possible with the help of interfaces but not with classes
+
+### Advantages of Interface
+
+  * It used to achieve loose coupling
+  * It is used to achieve total abstraction
+  * To achieve component-based- programming
+  * To achieve multiple inheritance and abstraction
+  * Interfaces add a plug and play like architecture into application
+
+## Static Classes & Methods
+
+  * Class cannot be instantiated
+  * You cannot create a object of a static class and cannot access static members using an object
+  * Apply `static` modifier before the class name and after access modifier to make a class static
+  * Syntax:
+  ```
+  public static class Calculator
+  {
+    private static int _resultStorage = 0;
+    public static string Type = "Arithmetic";
+    public static int Sum(int num1, int num2)
+    {
+        return num1+num2;
+    }
+    public static int Store(int result)
+    {
+        _resultStorage = result;
+    }
+  }
+  * You wiil get error if implement any member non-static
+  * If you create a instance from static class you will get error

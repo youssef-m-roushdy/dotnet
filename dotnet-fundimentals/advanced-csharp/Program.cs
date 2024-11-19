@@ -14,6 +14,13 @@ namespace advanced_csharp
             savingAccount.Balance();
             savingAccount.Deposite();
             savingAccount.Withdraw();
+
+            SavingAcc savingAcc = new SavingAcc();
+            savingAcc.Balance();
+            savingAcc.Deposite();
+            savingAcc.Withdraw();
+            savingAcc.OpenAccount();
+            savingAcc.CloseAccount();
         }
     }
 }
