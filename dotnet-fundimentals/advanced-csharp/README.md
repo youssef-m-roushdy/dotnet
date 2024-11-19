@@ -175,3 +175,18 @@
       //set the value specified by index
     }
   }
+```
+
+## ENUMS IN C#
+
+  * An enum is user-defined data type that has a fixed set of related values
+  * We use the enum keyword to create an enum
+  ```
+  enum Months
+  {
+    May,
+    June,
+    July
+  }
+  ```
+  
