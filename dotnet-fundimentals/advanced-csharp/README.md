@@ -82,5 +82,22 @@
         _resultStorage = result;
     }
   }
+  ```
   * You wiil get error if implement any member non-static
   * If you create a instance from static class you will get error
+
+## Extension Methods
+
+  * Extension methods are additional methods
+  * These methods create and add new methods to existing class without creating new child class
+  * They are the special type of the static methods that can be called as instance methods
+  * We can add extension methods in both predefined classes and user created custom classes
+  * Example:
+  ```
+  int i = 100;
+
+  bool result = i.IsGreaterThan(100);// False 
+  ```
+  * Is a static method
+  * It must have this keyword associate with class name
+  * Class name should be the first parameter in the parameter list  
