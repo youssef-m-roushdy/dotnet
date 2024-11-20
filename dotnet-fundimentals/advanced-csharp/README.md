@@ -293,8 +293,26 @@ finally
   * The `=>` is the Lambda operator which is used in lambda expression
   * Lambda Expresions is devided into two parts
     * the left side is the input and the right is the expression
-      * (perameterList) => lambda body
+      * `(perameterList) => lambda body`
       * Types of Lambda Expression
         * Expression Lambda: Consists of the input and expression
         * Syntax: `input => expression`
       * Statement Lambda: Consists of the input and set of statements to be executed
+
+## Expression Tree
+
+  * Expression tree is nothing but expressions arranged in tree-like data structure
+  * Each node is an expression tree is an expression
+  * Expression tree is an in-memory representation of a lambda expression
+  * It holds the actual elements of the query not the result of the query
+  * The expression tree makes the structure of the lambda expression transparent and explicit
+  * You can interact with data in expression tree just as you can with any other data structure
+  * Syntax: `Expression<TDelegate> name = lambdaExpression;`
+  * Expression Trees created using the following two ways
+    * Using Expression Lambda
+    * Using Expression Tree API
+  * The simple structure of an `Expression<TDelegate>` has four properties as given below
+    * `Body`: The body of the expression
+    * `Parameters`: The parameters of the lambda expression
+    * `NodeType`: The type of node in the tree
+    * `Type`: The type of expression

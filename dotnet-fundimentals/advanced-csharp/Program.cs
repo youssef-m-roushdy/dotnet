@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace advanced_csharp
@@ -145,15 +146,27 @@ namespace advanced_csharp
             //Lambda Expression
 
             //Expression Lambda
-            var numbers = new int[] {2, 4, 6, 8, 1, 3, 5, 7};
-            var count = numbers.Count(x => x == 5);
-            Console.WriteLine(count);
+            // var numbers = new int[] {2, 4, 6, 8, 1, 3, 5, 7};
+            // var count = numbers.Count(x => x == 5);
+            // Console.WriteLine(count);
 
-            //Statement Lambda
-            List<int> numbers2 = new List<int>{2, 4, 6, 8, 1, 5, 3, 5, 7, 5};
-            count = numbers2.Count(x => {return x == 5;});
-            Console.WriteLine(count);
+            // //Statement Lambda
+            // List<int> numbers2 = new List<int>{2, 4, 6, 8, 1, 5, 3, 5, 7, 5};
+            // count = numbers2.Count(x => {return x == 5;});
+            // Console.WriteLine(count);
+            // Console.WriteLine();
 
+            // Expression Tree
+            Func<string, string, string> stringJoins = (str1, str2) => string.Concat(str1, str2);
+
+            Expression<Func<string, string, string>> stringJoinsExpr = (str1, str2) => string.Concat(str1, str2);
+
+            var func = stringJoinsExpr.Compile();
+            var result = func("Hello", "World");
+            Console.WriteLine(result);
+            // OR
+            result = stringJoinsExpr.Compile()("Hello", "Everyone");
+            Console.WriteLine(result);
         }
 
         // Event Message for Event
