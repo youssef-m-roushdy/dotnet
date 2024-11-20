@@ -251,3 +251,7 @@ finally
   Console.WriteLine($"${anonyInfo.Fname} ${anonyInfo.Lname}");
   ```
 
+### Delegates Type
+
+  * `SingleCast Delegates`: A single function or method is referred as a Delegate
+  * `MultiCast Delegates`: Refers to the delegation of multiple functions ot methods
