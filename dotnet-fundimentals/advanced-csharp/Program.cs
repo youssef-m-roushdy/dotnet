@@ -130,12 +130,17 @@ namespace advanced_csharp
 
             //Event
             // The Subscriber Model
-            EventExample events = new EventExample();
+            //EventExample events = new EventExample();
             //Delegate_OddNumber pointers null so
             //Make Delegate_OddNumber pointer in method EventMessage
-            events.Event_OddNumber += new EventExample.Delegate_OddNumber(EventMessage);
-            events.Addition();
-            Console.ReadLine();
+            // events.Event_OddNumber += new EventExample.Delegate_OddNumber(EventMessage);
+            // events.Addition();
+            // Console.ReadLine();
+            // Console.WriteLine();
+
+            //Anonymous Method
+            AnonymousMethodExample.InvokeMethod();
+
         }
 
         // Event Message for Event

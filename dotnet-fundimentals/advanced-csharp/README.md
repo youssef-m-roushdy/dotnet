@@ -263,3 +263,24 @@ finally
   * To raise an event in C# you need a publisher and recieve and handle an event you need a subscriber or multiple subscribers
   * These are usually implemented as publisher and subscriber classes
   * Syntax: `event delegate_name event_name;`
+
+## Anonymous Methods
+
+  * Anonymous Method is method without a name
+  * Anonymous methods can bee defined using the delegate keyword
+  * Thy can assigned to variable of delegate type
+  * Anonymous methods can access variable defined in an outer function
+  * Example:
+  ```
+  public delegate void Print(int value);
+
+  static void Main()
+  {
+    Print print = delegate(int val)
+    {
+      Console.WriteLine("Inside Anonymous Method Value {0}");
+    };
+
+    print(500);
+  }
+  ```
