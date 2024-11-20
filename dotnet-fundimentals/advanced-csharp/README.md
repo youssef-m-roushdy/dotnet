@@ -255,3 +255,11 @@ finally
 
   * `SingleCast Delegates`: A single function or method is referred as a Delegate
   * `MultiCast Delegates`: Refers to the delegation of multiple functions ot methods
+
+## Events
+
+  * Event in C# being a subset of delegates are defined by using delegates
+  * An event is an encapsulated delegate
+  * To raise an event in C# you need a publisher and recieve and handle an event you need a subscriber or multiple subscribers
+  * These are usually implemented as publisher and subscriber classes
+  * Syntax: `event delegate_name event_name;`

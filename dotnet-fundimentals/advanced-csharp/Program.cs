@@ -119,14 +119,29 @@ namespace advanced_csharp
             // Console.WriteLine(DelegateExample.GetNumber());
 
             //Multi Delegation
-            CalculateDelegate c1 = new CalculateDelegate(DelegateExample.Addition);
-            c1(100);
-            Console.WriteLine(DelegateExample.GetNumber());
+            // CalculateDelegate c1 = new CalculateDelegate(DelegateExample.Addition);
+            // c1(100);
+            // Console.WriteLine(DelegateExample.GetNumber());
 
-            c1 += new CalculateDelegate(DelegateExample.Addition);
-            c1 += new CalculateDelegate(DelegateExample.Multiplication);
-            c1(100);
-            Console.WriteLine(DelegateExample.GetNumber());
+            // c1 += new CalculateDelegate(DelegateExample.Addition);
+            // c1 += new CalculateDelegate(DelegateExample.Multiplication);
+            // c1(100);
+            // Console.WriteLine(DelegateExample.GetNumber());
+
+            //Event
+            // The Subscriber Model
+            EventExample events = new EventExample();
+            //Delegate_OddNumber pointers null so
+            //Make Delegate_OddNumber pointer in method EventMessage
+            events.Event_OddNumber += new EventExample.Delegate_OddNumber(EventMessage);
+            events.Addition();
+            Console.ReadLine();
+        }
+
+        // Event Message for Event
+        static void EventMessage()
+        {
+            Console.WriteLine("Event Executed: Odd Number");
         }
     }
 }
