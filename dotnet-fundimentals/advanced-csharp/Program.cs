@@ -139,7 +139,20 @@ namespace advanced_csharp
             // Console.WriteLine();
 
             //Anonymous Method
-            AnonymousMethodExample.InvokeMethod();
+            //AnonymousMethodExample.InvokeMethod();
+            // Console.WriteLine();
+            
+            //Lambda Expression
+
+            //Expression Lambda
+            var numbers = new int[] {2, 4, 6, 8, 1, 3, 5, 7};
+            var count = numbers.Count(x => x == 5);
+            Console.WriteLine(count);
+
+            //Statement Lambda
+            List<int> numbers2 = new List<int>{2, 4, 6, 8, 1, 5, 3, 5, 7, 5};
+            count = numbers2.Count(x => {return x == 5;});
+            Console.WriteLine(count);
 
         }
 
