@@ -189,4 +189,46 @@
     July
   }
   ```
-  
+
+## Exception Hanling
+
+  * An Exception is an unexpected event that occurs during execution
+  * They abnormally terminate flow of the program instructions we need to handle those exceptions
+  * The actions to be performed in case of occurences of an exception is not known to program
+  * In such a case we create an exception Object and call the exception handler code
+  * Responding or handling exceptions is called Exception Handling
+
+### Exception Handler Keywords
+
+  * `try`: Used to define try block, This block holds the code that may throw error
+  * `catch`: Used to define a catch block, This block catches exception thrown by the try block
+  * `finally`: Used to define the finally block, This block holds the default code
+  * `throw`: Used to throw an exception manually
+
+#### Syntax
+`Try-Catch`:
+```
+try
+{
+  //Code that may raise an exception
+}
+catch(Exception e)
+{
+  //Code that may handles the exception
+}
+```
+`Try-Catch-Finally`:
+```
+try
+{
+  //Code that may raise an exception
+}
+catch(Exception e)
+{
+  //Code that may handles the exception
+}
+finally
+{
+  //This code is always executed
+}
+```

@@ -67,8 +67,16 @@ namespace advanced_csharp
             // Console.WriteLine();
 
             //Enum
-            EnumDemo enumDemo = new EnumDemo();
-            enumDemo.Display();
+            // EnumDemo enumDemo = new EnumDemo();
+            // enumDemo.Display();
+
+            //Exception Handling
+            Calculation calculation = new Calculation();
+            calculation.Calculate(100, 20);
+            calculation.Calculate(100, 0);
+            calculation.Calculate(20, 4);
+
+            calculation.CalculateAnother();
         }
     }
 }
