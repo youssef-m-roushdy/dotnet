@@ -232,3 +232,22 @@ finally
   //This code is always executed
 }
 ```
+
+## Anonymous Types In CSharp
+
+  * Main purpose to help you to store any kind of data
+  * Anonymous types allow us to create an object that has read only property
+  * Anonymous objects is an object that has no explicite type
+  * C# compiler generates type name and is accissible only for current block of code
+  * These are best for `use and throw` types
+  * To create anonymous types we must use new operator with an object initializer
+  * Example:
+  ```
+  var anonyInfo = new
+  {
+    Fname = "Youssef",
+    Lname = "Mahmoud"
+  };
+  Console.WriteLine($"${anonyInfo.Fname} ${anonyInfo.Lname}");
+  ```
+

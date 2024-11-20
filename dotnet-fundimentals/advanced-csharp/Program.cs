@@ -69,14 +69,42 @@ namespace advanced_csharp
             //Enum
             // EnumDemo enumDemo = new EnumDemo();
             // enumDemo.Display();
+            // Console.WriteLine();
 
             //Exception Handling
-            Calculation calculation = new Calculation();
-            calculation.Calculate(100, 20);
-            calculation.Calculate(100, 0);
-            calculation.Calculate(20, 4);
+            // Calculation calculation = new Calculation();
+            // calculation.Calculate(100, 20);
+            // calculation.Calculate(100, 0);
+            // calculation.Calculate(20, 4);
 
-            calculation.CalculateAnother();
+            // calculation.CalculateAnother();
+            // Console.WriteLine();
+
+            //Anonymous Type
+            var obj = new 
+            {
+                firstName = "Youssef",
+                lastName = "Mahmoud",
+                salary = 12000,
+                address = new
+                {
+                    streetName= "Warraq",
+                    city = "Giza"
+                },
+                projects = new[]
+                {
+                    new {name = "E-Commerce", duration = "40 Hours"},
+                    new {name = "Admin Portal", duration = "25 Hours"},
+                    new {name = "Accounting", duration = "30 Hours"},
+                }
+            };
+            Console.WriteLine($"{obj.firstName} {obj.lastName} {obj.salary}");
+            Console.WriteLine($"{obj.address.streetName} {obj.address.city}");
+            foreach (var item in obj.projects)
+            {
+                Console.WriteLine($"Project: {item.name}, Duration: {item.duration}");
+            }
+
         }
     }
 }
