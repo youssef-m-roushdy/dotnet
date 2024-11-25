@@ -141,3 +141,83 @@ public class ProductsController : ControllerBase
 * Separation of Concerns: Keep the code for request handling separate from data and UI logic.
 * Reusability: Centralize and reuse logic for handling requests.
 * Testability: Easier to unit test by mocking dependencies.
+
+## Creating A Database For Web API
+
+<b>Requered NuGet Packages To Install</b>:
+
+<b>For SQL Server:</b>
+```
+Microsoft.EntityFrameworkCore.SqlServer
+```
+
+<b>For MySQL:</b>
+```
+Pomelo.EntityFrameworkCore.MySql
+```
+
+<b>Other Requered Packages</b>
+```
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Design
+```
+
+<b>MySQL Connection String</b>: `Server=127.0.0.1;Port=3306;Database=DatabaseName;Uid=User;Pwd=Password;`
+
+<b>SQL Server Connection String</b>: `server=ServerName; database=DBName; Integrated Security=true;TrustServerCertificate=true;`
+
+</b>Configure MySQL Into My API As Database And Etablish A Connection</b>
+
+<b>appsetting.json:</b>
+```
+"ConnectionStrings": {
+    "DefaultConnection": "Server=127.0.0.1;Port=3306;Database=DatabaseName;Uid=User;Pwd=Password;"
+  }
+```
+
+<b>Base Product.cs Model:</b>
+```
+public class Product
+{
+    public int ProductId { get; set; }
+    public string? ProductName { get; set; }
+    public double Price { get; set; }
+}
+```
+
+<b>ApplicationDbContext:</b>
+```
+public class ApplicationDbContext : DbContext
+{
+    public DbSet<Product> Products {get; set;}
+
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+    :base(options)
+    {
+            
+    }
+        
+}
+```
+
+<b>Program.cs:</b>
+```
+builder.Services.AddDbContext<ApplicationDbContext>(
+    options => options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
+    )
+);
+```
+
+### Applying Changes To The Database Schema Through Migration
+
+<b>Add Migration:</b> Captures the current changes in your models and creates a migration file.
+```
+dotnet ef migrations add MigrationName
+```
+
+<b>Update Database:</b> Applies the latest migrations to the database.
+```
+dotnet ef database update
+```

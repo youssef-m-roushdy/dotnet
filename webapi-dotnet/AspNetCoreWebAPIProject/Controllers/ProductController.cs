@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCoreWebAPIProject.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -25,13 +26,13 @@ namespace AspNetCoreWebAPIProject.Controllers
             new Product() {ProductId = 10, ProductName = "Product Ten", Price = 60000}
         };
         [HttpGet]
-        public IActionResult GetAllProducts()
+        public IActionResult GetAllProductsInList()
         {
             return Ok(products);
         }
 
         [HttpPost]
-        public IActionResult AddNewProduct(string productName, double price)
+        public IActionResult AddNewProductToList(string productName, double price)
         {
             int id = products.Count + 1;
             Product newProduct =  new Product() {ProductId = id, ProductName = productName, Price = price};
