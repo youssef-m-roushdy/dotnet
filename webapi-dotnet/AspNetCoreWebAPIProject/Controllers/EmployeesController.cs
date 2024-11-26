@@ -35,7 +35,7 @@ namespace AspNetCoreWebAPIProject.Controllers
             return Ok(employees.ToList());
         }
 
-        [Route("id/{id}")]
+        [Route("id/{id:int}")]
         [HttpGet]
         public IActionResult GetEmployeeById([FromRoute]int id)
         {
