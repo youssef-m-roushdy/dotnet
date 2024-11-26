@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AspNetCoreWebAPIProject.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ProductController : Controller
     {
         public static List<Product> products = new List<Product>
