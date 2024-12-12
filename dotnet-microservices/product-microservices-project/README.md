@@ -1,0 +1,40 @@
+# Product Management Application Service
+
+## Required Packages For Entity Framework Core
+
+### NuGet:
+
+```
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.Relational
+```
+
+### In My Case I Use MySQL So I Installed
+
+```
+Pomelo.EntityFrameworkCore.MySql
+```
+
+### If You Prefer SQL Server Installed
+
+```
+Microsoft.EntityFrameworkCore.SqlServer
+```
+
+## Congigure `appsetting.json` And Add The Connection String
+
+### I Use MySQL Connection String
+
+```
+"ConnectionStrings": {
+    "ProductDB": "Server=127.0.0.1;Port=3306;Database=DbName;Uid=Uid;Pwd=Pwd;"
+  }
+```
+
+## Finally Migrate And Apply Modification Into The Database
+
+```
+dotnet ef migrations add MigrationName
+dotnet ef database update
+```
