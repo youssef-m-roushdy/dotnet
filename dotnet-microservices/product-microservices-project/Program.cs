@@ -1,7 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using product_microservices_project.Data;
+using product_microservices_project.Interfaces;
+using product_microservices_project.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllers();
 
 builder.Services.AddDbContext<ProductDbContext>(
     options => options.UseMySql(
@@ -10,7 +14,7 @@ builder.Services.AddDbContext<ProductDbContext>(
     )
 );
 
-builder.Services.AddControllers();
+builder.Services.AddTransient<IProductRepository, ProductRepository>();
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

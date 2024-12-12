@@ -38,3 +38,7 @@ Microsoft.EntityFrameworkCore.SqlServer
 dotnet ef migrations add MigrationName
 dotnet ef database update
 ```
+
+## Repository Pattern
+
+  * Repository works as a micro component of microservice that encapsulates the data access layer, and helps in data persistence and testability as well. Let's configure repository pattern in our product microservice project
