@@ -24,7 +24,8 @@ namespace product_microservices_project.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            return Ok(_productRepository.GetProducts);
+            var products = _productRepository.GetProducts();
+            return Ok(products);
         }
 
         [HttpGet("{id}")]
