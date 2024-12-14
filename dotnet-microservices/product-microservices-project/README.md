@@ -128,3 +128,4 @@ dotnet ef database update
     mysql_data:
 ```
   * Finally run this `docker-compose up --build` to build your containers
+  * Test On Swagger UI Follow this link `http://localhost:8080/swagger/index.html`
