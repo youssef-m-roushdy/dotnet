@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9GtwwkZMPv8V3QZ3lMBowbaAGTbIxNbL2/YguM0huhY=",
+  "Source": "ocelot-gateway",
+  "BasePath": "_content/ocelot-gateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

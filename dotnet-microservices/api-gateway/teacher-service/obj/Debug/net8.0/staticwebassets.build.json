@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "FptwscohE99zN6PeLdtbgss+rxO1k6KuPe9igULLHQk=",
+  "Source": "teacher-service",
+  "BasePath": "_content/teacher-service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
