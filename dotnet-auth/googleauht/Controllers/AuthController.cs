@@ -1,10 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Security.Claims;
+using googleauht.Models;
+using googleauht.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace googleauht.Controllers
@@ -13,6 +13,20 @@ namespace googleauht.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly JwtService _jwtService;
+
+        public AuthController(
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager,
+            JwtService jwtService)
+        {
+            _userManager = userManager;
+            _signInManager = signInManager;
+            _jwtService = jwtService;
+        }
+
         [HttpGet("login")]
         public IActionResult Login()
         {
@@ -24,16 +38,109 @@ namespace googleauht.Controllers
         [HttpGet("google-response")]
         public async Task<IActionResult> GoogleResponse()
         {
-            var result = await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            if (!result.Succeeded) return BadRequest("Authentication failed.");
+            var authenticateResult = await HttpContext.AuthenticateAsync(GoogleDefaults.AuthenticationScheme);
 
-            var claims = result.Principal.Identities
-                .FirstOrDefault()?.Claims.Select(c => new { c.Type, c.Value });
+            if (!authenticateResult.Succeeded)
+                return BadRequest("Google authentication failed.");
+
+            var email = authenticateResult.Principal.FindFirstValue(ClaimTypes.Email);
+            var providerUserId = authenticateResult.Principal.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var user = await _userManager.FindByEmailAsync(email);
+
+            if (user == null)
+            {
+                user = new ApplicationUser
+                {
+                    UserName = email,
+                    Email = email,
+                    Provider = "Google",
+                    ProviderUserId = providerUserId, // This is now properly set
+                    EmailConfirmed = true
+                };
+
+                var result = await _userManager.CreateAsync(user);
+                if (!result.Succeeded)
+                    return BadRequest(result.Errors);
+            }
+
+            var token = await _jwtService.GenerateToken(user);
 
             return Ok(new
             {
-                Message = "Google authentication successful",
-                Claims = claims
+                Message = "Authentication successful",
+                Token = token,
+                User = new
+                {
+                    user.Id,
+                    user.Email,
+                    user.UserName
+                }
+            });
+        }
+
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] RegisterModel model)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var user = new ApplicationUser
+            {
+                UserName = model.Email,
+                Email = model.Email,
+                Provider = "Manual",
+                ProviderUserId = null // Explicitly set to null for manual registration
+            };
+
+            var result = await _userManager.CreateAsync(user, model.Password);
+
+            if (!result.Succeeded)
+                return BadRequest(result.Errors);
+
+            var token = await _jwtService.GenerateToken(user);
+
+            return Ok(new
+            {
+                Message = "Registration successful",
+                Token = token,
+                User = new
+                {
+                    user.Id,
+                    user.Email,
+                    user.UserName
+                }
+            });
+        }
+
+        [HttpPost("login-manual")]
+        public async Task<IActionResult> LoginManual([FromBody] LoginModel model)
+        {
+            var user = await _userManager.FindByEmailAsync(model.Email);
+
+            if (user == null)
+                return BadRequest("Invalid credentials");
+
+            if (user.Provider != "Manual")
+                return BadRequest($"Please login using {user.Provider}");
+
+            var result = await _signInManager.CheckPasswordSignInAsync(user, model.Password, false);
+
+            if (!result.Succeeded)
+                return BadRequest("Invalid credentials");
+
+            var token = await _jwtService.GenerateToken(user);
+
+            return Ok(new
+            {
+                Message = "Login successful",
+                Token = token,
+                User = new
+                {
+                    user.Id,
+                    user.Email,
+                    user.UserName
+                }
             });
         }
 
@@ -43,5 +150,17 @@ namespace googleauht.Controllers
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return Ok("Logged out successfully");
         }
+    }
+
+    public class RegisterModel
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
+    }
+
+    public class LoginModel
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
 }
