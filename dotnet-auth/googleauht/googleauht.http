@@ -1,0 +1,6 @@
+@googleauht_HostAddress = http://localhost:5152
+
+GET {{googleauht_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
