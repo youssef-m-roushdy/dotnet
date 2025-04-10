@@ -1,0 +1,6 @@
+@GraphQLRestaurantAPI_HostAddress = http://localhost:5252
+
+GET {{GraphQLRestaurantAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
