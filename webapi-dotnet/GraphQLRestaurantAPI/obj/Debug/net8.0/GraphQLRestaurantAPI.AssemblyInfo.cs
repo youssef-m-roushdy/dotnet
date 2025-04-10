@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GraphQLRestaurantAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83dc24b28d7cb297884697739fa4093b3bef8abf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+270c00b36dc5f4fbcdd77cf88d90245e28ae2f71")]
 [assembly: System.Reflection.AssemblyProductAttribute("GraphQLRestaurantAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GraphQLRestaurantAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
