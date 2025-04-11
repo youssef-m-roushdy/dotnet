@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GraphQLDemo.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace GraphQLDemo.Data
@@ -12,5 +13,7 @@ namespace GraphQLDemo.Data
         {
             
         }
+
+        public DbSet<Employee> Employees {get; set;}
     }
 }
