@@ -1,4 +1,7 @@
+using GraphQL.Server;
 using GraphQLDemo.Data;
+using GraphQLDemo.GraphQL;
+using GraphQLDemo.GraphQL.Queries;
 using GraphQLDemo.Interfaces;
 using GraphQLDemo.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +21,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<EmployeeQuery>();
+builder.Services.AddScoped<AppSchema>();
+//Register GraphQL
+builder.Services.AddGraphQL().AddSystemTextJson();
 
 var app = builder.Build();
 
@@ -27,8 +34,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapControllers();
-
 app.UseHttpsRedirection();
+app.UseAuthorization();
+app.MapControllers();
+app.UseGraphQL<AppSchema>();
+app.UseGraphQLGraphiQL("/ui/graphql");
 
 app.Run();

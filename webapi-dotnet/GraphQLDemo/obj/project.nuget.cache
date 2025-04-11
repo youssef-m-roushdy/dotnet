@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "B4Ed61O8gb/n3eNQPHVJelh/7G0rwlhcx3v8JvxI4h6JFysHcMJS4XZdSqAgqaAqcIax/OKyD8pLa6sazQV60g==",
+  "dgSpecHash": "GdTfBnkpnPQ7GpIwTjUolRBFsNHfa5rh/wZkS5OUYRYL1sV6xYANeVUEF5sgKZnmNqLTLfhN5twg30ixH45VRA==",
   "success": true,
   "projectFilePath": "/home/youssef/Desktop/dotnet/webapi-dotnet/GraphQLDemo/GraphQLDemo.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "/home/youssef/.nuget/packages/graphql.server.transports.aspnetcore/5.0.2/graphql.server.transports.aspnetcore.5.0.2.nupkg.sha512",
     "/home/youssef/.nuget/packages/graphql.server.transports.aspnetcore.systemtextjson/5.0.2/graphql.server.transports.aspnetcore.systemtextjson.5.0.2.nupkg.sha512",
     "/home/youssef/.nuget/packages/graphql.server.transports.subscriptions.abstractions/5.0.2/graphql.server.transports.subscriptions.abstractions.5.0.2.nupkg.sha512",
+    "/home/youssef/.nuget/packages/graphql.server.ui.graphiql/5.0.2/graphql.server.ui.graphiql.5.0.2.nupkg.sha512",
     "/home/youssef/.nuget/packages/graphql.systemreactive/4.1.0/graphql.systemreactive.4.1.0.nupkg.sha512",
     "/home/youssef/.nuget/packages/graphql.systemtextjson/4.1.0/graphql.systemtextjson.4.1.0.nupkg.sha512",
     "/home/youssef/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",

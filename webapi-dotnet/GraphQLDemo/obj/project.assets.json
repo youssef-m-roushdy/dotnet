@@ -211,6 +211,22 @@
           }
         }
       },
+      "GraphQL.Server.Ui.GraphiQL/5.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/GraphQL.Server.Ui.GraphiQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/GraphQL.Server.Ui.GraphiQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "GraphQL.SystemReactive/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -2120,6 +2136,22 @@
         "graphql.server.transports.subscriptions.abstractions.nuspec",
         "lib/netstandard2.0/GraphQL.Server.Transports.Subscriptions.Abstractions.dll",
         "lib/netstandard2.0/GraphQL.Server.Transports.Subscriptions.Abstractions.xml",
+        "logo.64x64.png"
+      ]
+    },
+    "GraphQL.Server.Ui.GraphiQL/5.0.2": {
+      "sha512": "aPi9iJ+O85lN9zoXg88Ha602PJEOw8x3xh2Q+MzAhfu93KXG6hrtqpJElNMl2p+hvSCTBNNK5Hk0RbEbUtNDSA==",
+      "type": "package",
+      "path": "graphql.server.ui.graphiql/5.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "graphql.server.ui.graphiql.5.0.2.nupkg.sha512",
+        "graphql.server.ui.graphiql.nuspec",
+        "lib/net5.0/GraphQL.Server.Ui.GraphiQL.dll",
+        "lib/net5.0/GraphQL.Server.Ui.GraphiQL.xml",
+        "lib/netcoreapp3.1/GraphQL.Server.Ui.GraphiQL.dll",
+        "lib/netcoreapp3.1/GraphQL.Server.Ui.GraphiQL.xml",
         "logo.64x64.png"
       ]
     },
@@ -5326,6 +5358,7 @@
     "net8.0": [
       "GraphQL >= 4.6.1",
       "GraphQL.Server.Transports.AspNetCore.SystemTextJson >= 5.0.2",
+      "GraphQL.Server.Ui.GraphiQL >= 5.0.2",
       "Microsoft.AspNetCore.OpenApi >= 8.0.14",
       "Microsoft.EntityFrameworkCore >= 8.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.2",
@@ -5377,6 +5410,10 @@
             "version": "[4.6.1, )"
           },
           "GraphQL.Server.Transports.AspNetCore.SystemTextJson": {
+            "target": "Package",
+            "version": "[5.0.2, )"
+          },
+          "GraphQL.Server.Ui.GraphiQL": {
             "target": "Package",
             "version": "[5.0.2, )"
           },
