@@ -6,6 +6,7 @@ using GraphQLDemo.Data;
 using GraphQLDemo.DTOs;
 using GraphQLDemo.Interfaces;
 using GraphQLDemo.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace GraphQLDemo.Repositories
 {
@@ -17,29 +18,48 @@ namespace GraphQLDemo.Repositories
             _context = context;
         }
 
-        public Task<IEnumerable<Employee>> GetAll()
+        public async Task<IEnumerable<Employee>> GetAll()
         {
-            throw new NotImplementedException();
+            return await _context.Employees.ToListAsync();
         }
 
-        public Task<Employee> GetById(int id)
+        public async Task<Employee> GetById(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Employees.FirstOrDefaultAsync(x => x.Id == id);
         }
-        public Task<bool> Create(CreateEmployeeDto newEmployee)
+        public async Task Create(CreateEmployeeDto newEmployee)
         {
-            throw new NotImplementedException();
+            Employee newEmp = new()
+            {
+                FirstName = newEmployee.FirstName,
+                LastName = newEmployee.LastName,
+                Email = newEmployee.Email
+            };
+
+            await _context.Employees.AddAsync(newEmp);
+            await _context.SaveChangesAsync();
         }
 
-        public Task<bool> Update(int id, UpdateEmployeeDto employee)
+        public async Task Update(int id, UpdateEmployeeDto employee)
         {
-            throw new NotImplementedException();
+            var emp = await GetById(id);
+            if (emp is null)
+                throw new Exception(nameof(emp));
+            
+            emp.FirstName = employee.FirstName is null ? emp.FirstName : employee.FirstName;
+            emp.LastName = employee.LastName is null ? emp.LastName : employee.LastName;
+            emp.Email = employee.Email is null ? emp.Email : employee.Email;
+
+            await _context.SaveChangesAsync();
         }
         
 
-        public Task<bool> Delete()
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var emp = await GetById(id);
+            
+            _context.Employees.Remove(emp);
+            await _context.SaveChangesAsync();
         }
     }
 }
