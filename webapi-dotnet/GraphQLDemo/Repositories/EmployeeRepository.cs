@@ -27,7 +27,7 @@ namespace GraphQLDemo.Repositories
         {
             return await _context.Employees.FirstOrDefaultAsync(x => x.Id == id);
         }
-        public async Task Create(CreateEmployeeDto newEmployee)
+        public async Task<Employee> Create(CreateEmployeeDto newEmployee)
         {
             Employee newEmp = new()
             {
@@ -38,9 +38,10 @@ namespace GraphQLDemo.Repositories
 
             await _context.Employees.AddAsync(newEmp);
             await _context.SaveChangesAsync();
+            return newEmp;
         }
 
-        public async Task Update(int id, UpdateEmployeeDto employee)
+        public async Task<Employee> Update(int id, UpdateEmployeeDto employee)
         {
             var emp = await GetById(id);
             if (emp is null)
@@ -51,6 +52,7 @@ namespace GraphQLDemo.Repositories
             emp.Email = employee.Email is null ? emp.Email : employee.Email;
 
             await _context.SaveChangesAsync();
+            return emp;
         }
         
 

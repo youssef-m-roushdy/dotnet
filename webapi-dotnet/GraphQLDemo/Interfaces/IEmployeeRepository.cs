@@ -11,8 +11,8 @@ namespace GraphQLDemo.Interfaces
     {
         Task<IEnumerable<Employee>> GetAll();
         Task<Employee> GetById(int id);
-        Task Create(CreateEmployeeDto newEmployee);
-        Task Update(int id, UpdateEmployeeDto employee);
+        Task<Employee> Create(CreateEmployeeDto newEmployee);
+        Task<Employee> Update(int id, UpdateEmployeeDto employee);
         Task Delete(int id);
     }
 }

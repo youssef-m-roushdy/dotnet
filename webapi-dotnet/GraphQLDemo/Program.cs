@@ -1,6 +1,7 @@
 using GraphQL.Server;
 using GraphQLDemo.Data;
 using GraphQLDemo.GraphQL;
+using GraphQLDemo.GraphQL.Mutations;
 using GraphQLDemo.GraphQL.Queries;
 using GraphQLDemo.Interfaces;
 using GraphQLDemo.Repositories;
@@ -22,9 +23,20 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<EmployeeQuery>();
+builder.Services.AddScoped<EmployeeMutation>();
 builder.Services.AddScoped<AppSchema>();
 //Register GraphQL
-builder.Services.AddGraphQL().AddSystemTextJson();
+builder.Services.AddGraphQL(options =>
+{
+    options.EnableMetrics = true;
+})
+.AddSystemTextJson()
+.AddErrorInfoProvider(opt => 
+{
+    opt.ExposeExceptionStackTrace = true;
+})
+.AddGraphTypes(typeof(AppSchema));
+
 
 var app = builder.Build();
 
