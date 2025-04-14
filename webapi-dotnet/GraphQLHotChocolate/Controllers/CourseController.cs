@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using GraphQLHotChocolate.DTOs.CourseDto;
+using GraphQLHotChocolate.DTOs.Course;
 using GraphQLHotChocolate.Interfaces;
 using GraphQLHotChocolate.Mappers.CourseMapper;
 using GraphQLHotChocolate.Models;
@@ -24,8 +24,8 @@ namespace GraphQLHotChocolate.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Course>>> GetAll()
         {
-            var students = await _courseRepository.GetAllAsync();
-            return Ok(students);
+            var courses = await _courseRepository.GetAllCoursesAsync();
+            return Ok(courses);
         }
 
 
@@ -34,8 +34,8 @@ namespace GraphQLHotChocolate.Controllers
         {
             try
             {
-                var student = await _courseRepository.GetByIdAsync(id);
-                return Ok(student);
+                var course = await _courseRepository.GetCourseByIdAsync(id);
+                return Ok(course);
             }
             catch (KeyNotFoundException ex)
             {
@@ -45,19 +45,19 @@ namespace GraphQLHotChocolate.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateCourseDto CourseDto)
+        public async Task<IActionResult> Create([FromBody] CreateCourseDto courseDto)
         {
-            var course = CourseDto.FromCreateCourseDtoToCourse();
+            var course = courseDto.FromCreateCourseDtoToCourse();
             await _courseRepository.AddAsync(course);
             return CreatedAtAction(nameof(GetById), new { id = course.Id }, course);
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateCourseDto studentDto)
+        public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateCourseDto courseDto)
         {
             try
             {
-                await _courseRepository.UpdateAsync(studentDto.FromUpdateCourseDtoToCourse(id));
+                await _courseRepository.UpdateAsync(courseDto.FromUpdateCourseDtoToCourse(id));
                 return NoContent();
             }
             catch (KeyNotFoundException ex)
@@ -79,5 +79,6 @@ namespace GraphQLHotChocolate.Controllers
                 return NotFound(ex.Message);
             }
         }
+
     }
 }

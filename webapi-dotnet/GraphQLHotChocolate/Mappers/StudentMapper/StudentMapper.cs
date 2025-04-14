@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using GraphQLHotChocolate.DTOs.StudentDto;
+using GraphQLHotChocolate.DTOs.Course;
+using GraphQLHotChocolate.DTOs.Student;
 using GraphQLHotChocolate.Models;
 
 namespace GraphQLHotChocolate.Mappers.StudentMapper
@@ -31,5 +32,6 @@ namespace GraphQLHotChocolate.Mappers.StudentMapper
                 PhoneNumber = studentDto.PhoneNumber
             };
         }
+
     }
 }

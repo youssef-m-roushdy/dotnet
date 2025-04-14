@@ -1,4 +1,4 @@
-using GraphQLHotChocolate.DTOs.StudentDto;
+using GraphQLHotChocolate.DTOs.Student;
 using GraphQLHotChocolate.Interfaces;
 using GraphQLHotChocolate.Mappers.StudentMapper;
 using GraphQLHotChocolate.Models;
@@ -21,7 +21,7 @@ namespace GraphQLHotChocolate.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Student>>> GetAll()
         {
-            var students = await _studentRepository.GetAllAsync();
+            var students = await _studentRepository.GetAllStudentsAsync();
             return Ok(students);
         }
 
@@ -30,7 +30,7 @@ namespace GraphQLHotChocolate.Controllers
         {
             try
             {
-                var student = await _studentRepository.GetByIdAsync(id);
+                var student = await _studentRepository.GetStudentByIdAsync(id);
                 return Ok(student);
             }
             catch (KeyNotFoundException ex)
