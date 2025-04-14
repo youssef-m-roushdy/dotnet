@@ -33,5 +33,17 @@ namespace GraphQLHotChocolate.Mappers.StudentMapper
             };
         }
 
+        public static StudentDto FromStudentToStudentDto(this Student student, int id)
+        {
+            return new StudentDto
+            {
+                Id = id,
+                FirstName = student.FirstName,
+                LastName = student.LastName,
+                Address = student.Address,
+                PhoneNumber = student.PhoneNumber
+            };
+        }
+
     }
 }

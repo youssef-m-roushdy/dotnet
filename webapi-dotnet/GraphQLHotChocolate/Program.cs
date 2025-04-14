@@ -1,4 +1,6 @@
 using GraphQLHotChocolate.Data;
+using GraphQLHotChocolate.GraphQL.Mutations;
+using GraphQLHotChocolate.GraphQL.Queries;
 using GraphQLHotChocolate.Interfaces;
 using GraphQLHotChocolate.Interfaces.Common;
 using GraphQLHotChocolate.Repositories;
@@ -16,8 +18,17 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 builder.Services.AddScoped<IStudentCourseRepository, StudentCourseRepository>();
+
+//builder.Services.AddCors();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddGraphQLServer()
+.RegisterDbContext<AppDbContext>(DbContextKind.Synchronized)
+.AddQueryType<StudentQuery>()
+.AddMutationType<StudentMutation>()
+.AddProjections().AddFiltering().AddSorting();
 
 var app = builder.Build();
 
@@ -30,5 +41,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+
+app.MapGraphQL("/graphql");
 
 app.Run();
