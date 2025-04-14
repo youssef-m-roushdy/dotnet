@@ -25,7 +25,6 @@ namespace GraphQLHotChocolate.Controllers
             return Ok(students);
         }
 
-        // GET: api/student/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Student>> GetById([FromRoute] int id)
         {
@@ -40,7 +39,6 @@ namespace GraphQLHotChocolate.Controllers
             }
         }
 
-        // POST: api/student
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateStudentDto studentDto)
         {
@@ -49,7 +47,6 @@ namespace GraphQLHotChocolate.Controllers
             return CreatedAtAction(nameof(GetById), new { id = student.Id }, student);
         }
 
-        // PUT: api/student
         [HttpPut]
         public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateStudentDto student)
         {
@@ -64,7 +61,6 @@ namespace GraphQLHotChocolate.Controllers
             }
         }
 
-        // DELETE: api/student/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete([FromRoute] int id)
         {
