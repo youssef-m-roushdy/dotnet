@@ -41,6 +41,14 @@
             "Grpc.AspNetCore": {
               "target": "Package",
               "version": "[2.57.0, )"
+            },
+            "Grpc.Tools": {
+              "target": "Package",
+              "version": "[2.71.0, )"
+            },
+            "Microsoft.AspNetCore.Grpc.JsonTranscoding": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
