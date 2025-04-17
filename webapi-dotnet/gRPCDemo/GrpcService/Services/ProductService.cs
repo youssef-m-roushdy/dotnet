@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using GrpcService.Protos;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GrpcService.Services
 {
+    [Authorize]
     public class ProductService : ProductProtoService.ProductProtoServiceBase
     {
         private readonly List<Product> _products = [];

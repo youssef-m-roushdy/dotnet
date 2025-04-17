@@ -74,3 +74,15 @@
 /home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/obj/Debug/net8.0/GrpcService.pdb
 /home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/obj/Debug/net8.0/GrpcService.genruntimeconfig.cache
 /home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/obj/Debug/net8.0/ref/GrpcService.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/Microsoft.AspNetCore.Authorization.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/Microsoft.AspNetCore.Metadata.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/Microsoft.Bcl.Memory.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
