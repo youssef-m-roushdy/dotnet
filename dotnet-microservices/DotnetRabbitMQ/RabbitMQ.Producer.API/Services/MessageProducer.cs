@@ -24,7 +24,7 @@ namespace RabbitMQ.Producer.API.Services
 
             using var channel = conn.CreateModel();
 
-            channel.QueueDeclare("bookings", durable: true, exclusive: true);
+            channel.QueueDeclare("bookings", durable: true, exclusive: false);
 
             var jsonString = JsonSerializer.Serialize(message);
             var body = Encoding.UTF8.GetBytes(jsonString);

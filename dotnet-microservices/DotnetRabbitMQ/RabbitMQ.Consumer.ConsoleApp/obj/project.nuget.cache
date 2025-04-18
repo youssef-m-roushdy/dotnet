@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ai/gEWArw3iv3RdNU2761YWT/Y1Uuv5zTaJv5q9GULSTbRtPceJavVLz1uOqZ/Lokx1fIiWIAUZBgoB0dMEO2Q==",
+  "dgSpecHash": "aDp9H0t0SfUBWgzbkrt+ItG4O+yCzGZR2JbWNvmoRJwxbVfgAnhcqp7Ptrwtfe8Z5mD9vvGLLH8vQQTG8mJJOA==",
   "success": true,
   "projectFilePath": "/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/RabbitMQ.Consumer.ConsoleApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/youssef/.nuget/packages/rabbitmq.client/6.4.0/rabbitmq.client.6.4.0.nupkg.sha512",
+    "/home/youssef/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/home/youssef/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }

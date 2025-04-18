@@ -3,3 +3,16 @@
 /home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.AssemblyInfo.cs
 /home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.csproj.CoreCompileInputs.cache
 /home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.sourcelink.json
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/bin/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/bin/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.deps.json
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/bin/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.runtimeconfig.json
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/bin/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.dll
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/bin/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.pdb
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/bin/Debug/net8.0/RabbitMQ.Client.dll
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.csproj.AssemblyReference.cache
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.csproj.CopyComplete
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.dll
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/refint/RabbitMQ.Consumer.ConsoleApp.dll
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.pdb
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.genruntimeconfig.cache
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/ref/RabbitMQ.Consumer.ConsoleApp.dll
