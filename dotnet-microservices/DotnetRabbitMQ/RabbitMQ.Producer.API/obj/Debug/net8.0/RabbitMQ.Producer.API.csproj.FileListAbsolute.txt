@@ -32,3 +32,4 @@
 /home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Producer.API/obj/Debug/net8.0/RabbitMQ.Producer.API.pdb
 /home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Producer.API/obj/Debug/net8.0/RabbitMQ.Producer.API.genruntimeconfig.cache
 /home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Producer.API/obj/Debug/net8.0/ref/RabbitMQ.Producer.API.dll
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Producer.API/bin/Debug/net8.0/RabbitMQ.Client.dll
