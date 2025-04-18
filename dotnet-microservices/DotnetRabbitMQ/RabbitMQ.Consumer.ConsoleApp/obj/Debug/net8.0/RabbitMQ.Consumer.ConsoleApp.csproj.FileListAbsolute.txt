@@ -1,0 +1,5 @@
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.AssemblyInfoInputs.cache
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.AssemblyInfo.cs
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.csproj.CoreCompileInputs.cache
+/home/youssef/Desktop/dotnet/dotnet-microservices/DotnetRabbitMQ/RabbitMQ.Consumer.ConsoleApp/obj/Debug/net8.0/RabbitMQ.Consumer.ConsoleApp.sourcelink.json
