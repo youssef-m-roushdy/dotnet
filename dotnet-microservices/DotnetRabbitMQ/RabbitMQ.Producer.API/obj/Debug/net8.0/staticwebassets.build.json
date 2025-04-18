@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "efHnX6jpB7fjvmDuWKq7jaso3UrG9k50BGPcQs1IB84=",
+  "Source": "RabbitMQ.Producer.API",
+  "BasePath": "_content/RabbitMQ.Producer.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
