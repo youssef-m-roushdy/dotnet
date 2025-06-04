@@ -25,10 +25,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddGraphQLServer()
-.RegisterDbContext<AppDbContext>(DbContextKind.Synchronized)
-.AddQueryType<StudentQuery>()
-.AddMutationType<StudentMutation>()
-.AddProjections().AddFiltering().AddSorting();
+    .RegisterDbContext<AppDbContext>(DbContextKind.Synchronized)
+    .AddQueryType<StudentQuery>()
+    .AddMutationType(d => d.Name("Mutation"))
+    .AddTypeExtension<StudentMutation>()
+    .AddTypeExtension<CourseMutation>()
+    .AddProjections()
+    .AddFiltering()
+    .AddSorting();
 
 var app = builder.Build();
 

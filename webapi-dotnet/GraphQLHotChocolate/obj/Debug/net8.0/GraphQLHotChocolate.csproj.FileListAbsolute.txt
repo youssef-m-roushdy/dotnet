@@ -130,7 +130,6 @@
 /home/youssef/Desktop/dotnet/webapi-dotnet/GraphQLHotChocolate/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.GraphQLHotChocolate.props
 /home/youssef/Desktop/dotnet/webapi-dotnet/GraphQLHotChocolate/obj/Debug/net8.0/staticwebassets.pack.json
 /home/youssef/Desktop/dotnet/webapi-dotnet/GraphQLHotChocolate/obj/Debug/net8.0/scopedcss/bundle/GraphQLHotChocolate.styles.css
-/home/youssef/Desktop/dotnet/webapi-dotnet/GraphQLHotChocolate/obj/Debug/net8.0/GraphQLHotChocolate.csproj.CopyComplete
 /home/youssef/Desktop/dotnet/webapi-dotnet/GraphQLHotChocolate/obj/Debug/net8.0/GraphQLHotChocolate.dll
 /home/youssef/Desktop/dotnet/webapi-dotnet/GraphQLHotChocolate/obj/Debug/net8.0/refint/GraphQLHotChocolate.dll
 /home/youssef/Desktop/dotnet/webapi-dotnet/GraphQLHotChocolate/obj/Debug/net8.0/GraphQLHotChocolate.pdb
@@ -165,3 +164,4 @@
 /home/youssef/Desktop/dotnet/webapi-dotnet/GraphQLHotChocolate/bin/Debug/net8.0/HotChocolate.Validation.dll
 /home/youssef/Desktop/dotnet/webapi-dotnet/GraphQLHotChocolate/bin/Debug/net8.0/System.IO.Hashing.dll
 /home/youssef/Desktop/dotnet/webapi-dotnet/GraphQLHotChocolate/bin/Debug/net8.0/Yarp.ReverseProxy.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/GraphQLHotChocolate/obj/Debug/net8.0/GraphQLH.ADE6E27A.Up2Date

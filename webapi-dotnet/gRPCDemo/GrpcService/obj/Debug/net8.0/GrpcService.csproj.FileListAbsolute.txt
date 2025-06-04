@@ -68,7 +68,6 @@
 /home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.GrpcService.props
 /home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/obj/Debug/net8.0/staticwebassets.pack.json
 /home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/obj/Debug/net8.0/scopedcss/bundle/GrpcService.styles.css
-/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/obj/Debug/net8.0/GrpcService.csproj.CopyComplete
 /home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/obj/Debug/net8.0/GrpcService.dll
 /home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/obj/Debug/net8.0/refint/GrpcService.dll
 /home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/obj/Debug/net8.0/GrpcService.pdb
@@ -86,3 +85,4 @@
 /home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
 /home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/home/youssef/Desktop/dotnet/webapi-dotnet/gRPCDemo/GrpcService/obj/Debug/net8.0/GrpcServ.50A4AFF7.Up2Date

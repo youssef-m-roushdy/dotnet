@@ -11,6 +11,7 @@ using GraphQLHotChocolate.Models;
 
 namespace GraphQLHotChocolate.GraphQL.Mutations
 {
+    [ExtendObjectType("Mutation")]
     public class StudentMutation
     {
         public async Task<Student> CreateStudent([Service(ServiceKind.Synchronized)] IStudentRepository _studentRepository
@@ -25,7 +26,7 @@ namespace GraphQLHotChocolate.GraphQL.Mutations
         , int id, UpdateStudentDto studentDto)
         {
             var student = _context.Students.FirstOrDefault(x => x.Id == id);
-            
+
             if (studentDto.FirstName != null) student.FirstName = studentDto.FirstName;
             if (studentDto.LastName != null) student.LastName = studentDto.LastName;
             if (studentDto.Address != null) student.Address = studentDto.Address;
